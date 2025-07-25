@@ -1,0 +1,32 @@
+.container{
+    --max-width: 390px;
+    width: min(var(--max-width),100% - var(--px-lg) * 2);
+    margin-inline: auto;
+}
+.align-item{
+    text-align: center;
+}
+
+.py-xl{
+    padding-block: var(--py-xl);
+}
+.py-md{
+    padding-block: var(--py-sm);
+}
+.mobile-only{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.gap1{
+    gap:.75rem;
+}
+@media(width >= 80em){
+    .container{
+        --max-width: 68rem;
+    }
+    .desktop-only{
+        display: none;
+    }
+}
