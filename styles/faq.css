@@ -1,6 +1,6 @@
 .faq-section{
     margin-top: 5rem;
-    max-width: 18.8rem;
+    max-width: 19rem;
     padding-bottom: 2.75rem;
     gap: 2.25rem;
     & .faq-item{
@@ -25,4 +25,12 @@
     & .faq-item + .faq-item {
         margin-top: 2.25rem;
     }
+}
+
+@media(width >= 80em){
+    .faq-section.mobile-only{
+       margin-top: 2.375rem;
+       max-width: 25rem;
+    }
+    
 }

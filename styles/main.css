@@ -107,18 +107,10 @@ main {
             font: var(--label_sm);
             color: var(--content-primary);
             background: var(--background-tertiary);
-
-            ::before{
-
-            }
         }
     }
 
-    & .faq-section{
-      & > div{
-        margin-bottom: 2.25rem;
-      }
-    }
+    
 }
 
 @media(width >=80em) {
@@ -130,11 +122,14 @@ main {
         & .instructions {
             padding-block: 2.125rem;
         }
-        
+
         & .intro-section {
             & h1 {
                 margin-top: .75rem;
             }
+
+           
         }
+        
     }
 }
