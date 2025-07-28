@@ -46,7 +46,7 @@
     --overline: 700 1rem/1.5 var(--ff-mono);
     
     --paragraph_md: 500 .875rem/1.5 var(--ff-flex);
-    --paragraph_sm: 500 0.75rem/1.5 var(--ff-flex);
+    --paragraph_sm: 500 .75rem/1.5 var(--ff-flex);
 
     --label_md: 700 1.25rem/1.5 var(--ff-flex);
     --label_sm: 700 1rem/1.5 var(--ff-flex);
