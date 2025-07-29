@@ -22,6 +22,12 @@
 .gap1{
     gap:.75rem;
 }
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
 @media(width >= 80em){
     .container{
         --max-width: 68rem;
