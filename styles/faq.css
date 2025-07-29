@@ -21,7 +21,6 @@
             color: var(--content-secondary);
         }
     }
-
     & .faq-item + .faq-item {
         margin-top: 2.25rem;
     }
