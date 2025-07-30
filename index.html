@@ -52,15 +52,21 @@
                     <div class="flex gap1">
                         <div class="input-group">
                             <label for="amount">NÚMEROS</label>
-                            <input type="text" name="amount" id="amount">
+                            <div class="input-gradient">
+                                <input type="text" name="amount" id="amount" required>
+                            </div>
                         </div>
                         <div class="input-group">
                             <label for="min">DE</label>
-                            <input type="text" name="min" id="min">
+                            <div class="input-gradient">
+                                <input type="text" name="min" id="min" required>
+                            </div>
                         </div>
                         <div class="input-group">
                             <label for="max">DE</label>
-                            <input type="text" name="max" id="max">
+                            <div class="input-gradient">
+                                <input type="text" name="max" id="max" required>
+                            </div>
                         </div>
                     </div>
                     <div class="toggle-wrapper">
@@ -72,7 +78,7 @@
                         </div>
                         <span class="toggle-label">Não repetir número</span>
                     </div>
-                    <button type="submit" class="btn">
+                    <button type="submit" class="btn" id="prize">
                         Sortear
                         <img src="assets/icon/arrow.svg" alt="" aria-hidden="true">
                     </button>

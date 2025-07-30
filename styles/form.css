@@ -1,0 +1,99 @@
+& form {
+    margin-top: 2.5rem;
+
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        label {
+            font: var(--label_sm);
+            color: var(--content-secondary);
+        }
+
+        &:has(.input-gradient:hover) label,
+        &:has(.input-gradient:focus-within) label {
+            color: var(--content-brand);
+        }
+
+        .input-gradient {
+            padding: 0.1rem;
+            border-radius: 0.5rem;
+            background: var(--background-secondary);
+            transition: background 0.3s ease;
+
+            input {
+                width: 5.375rem;
+                height: 3.5rem;
+                border-radius: 0.5rem;
+                background: var(--background-secondary);
+                border: none;
+                color: #fff;
+                font: var(--display_sm);
+                text-align: center;
+                outline: none;
+                transition: background 0.3s ease;
+
+                &:hover,
+                &:focus {
+                    background: #24222E;
+                }
+            }
+
+            &:hover,
+            &:focus-within {
+                background: var(--gradiente-border);
+            }
+        }
+    }
+
+    .toggle-wrapper {
+        margin-top: 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .toggle {
+            #noRepeat {
+                display: none;
+            }
+
+            .switch {
+                position: relative;
+                background: var(--content-tertiary);
+                width: 1.875rem;
+                height: 1.25rem;
+                border-radius: 1rem;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 3px;
+                transition: all 0.5s ease-in-out;
+
+                .slider {
+                    position: absolute;
+                    background: var(--content-primary);
+                    width: 0.875rem;
+                    height: 0.875rem;
+                    border-radius: 50%;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+
+        .toggle-label {
+            font: 400 0.75rem/1.5 "Inter", sans-serif;
+        }
+
+        #noRepeat:checked~.switch {
+            background: var(--gradient-background);
+        }
+
+        #noRepeat:checked~.switch .slider {
+            transform: translateX(10px);
+        }
+    }
+}
